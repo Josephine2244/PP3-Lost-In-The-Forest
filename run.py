@@ -14,3 +14,17 @@ def start_game():
     This sets up the game for the player.
     They enter their name to personalise the experience.
     """
+    while True:
+        print(START_GAME_STORY)
+        global name
+        name = input("Enter your name: \n")
+        print("Processing...\n")
+        if name == "":
+            print("You have not entered a name. Please try again.")
+        else:
+            print(f"{name}, great! Let's begin...\n")
+            first_challenge()
+
+
+if __name__ == '__main__':
+    start_game()
