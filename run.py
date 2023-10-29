@@ -9,6 +9,38 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def meet_troll():
+    """
+    This is the troll challenge. The player must fight
+    the troll or answer a riddle to get passed.
+    """
+    while True:
+        print(MEET_TROLL_STORY)
+        print(colored("Options: speak/fight\n", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice == "speak":
+            print(colored(RIDDLE, "blue"))
+            player_answer = input()
+            if player_answer not in answer:
+                print("Incorrect! Here's a hint:")
+                print("2 words, 4 letters each. Think of money...\n")
+            else:
+                print("That's correct! Let's keep moving.")
+                after_troll()
+        elif player_choice == "fight":
+            print("You have chosen to fight. Quick! Hit the troll!\n")
+            print(colored("Options: hit troll", "green"))
+            player_choice = input()
+            if player_choice not in directions:
+                print("Please enter a valid option.")
+            elif player_choice == "hit troll":
+                print(f"You beat the troll! Let's get out of here {name}!\n")
+                after_troll()
+
+
+
 def tree_down():
     """
     This function sets up the scene for the goblin challenge.
