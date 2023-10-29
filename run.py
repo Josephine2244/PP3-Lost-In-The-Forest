@@ -9,6 +9,26 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def meet_goblin():
+    """
+    This is the goblin challenge. The player must fight the
+    goblin or give it their cloak.
+    """
+    while True:
+        print(MEET_GOBLIN_STORY)
+        print(colored("Options: give cloak/fight\n", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice == "give cloak":
+            print("Success! The goblin takes the cloak and leaves.\n")
+            print(f"Let's get moving {name} before we freeze!")
+            after_goblin()
+        elif player_choice == "fight":
+            print(FIGHT_GOBLIN)
+            print(f"Success {name}! You grab your cloak and run!\n")
+            after_goblin()
+
 def meet_troll():
     """
     This is the troll challenge. The player must fight
