@@ -9,6 +9,24 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def tree_down():
+    """
+    This function sets up the scene for the goblin challenge.
+    It also gives the player the choice to go back and pick
+    a different direction.
+    """
+    while True:
+        print(TREE_DOWN_STORY)
+        print(colored("Options: jump over/go back\n", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice == "jump over":
+            meet_goblin()
+        elif player_choice == "go back":
+            first_challenge()
+
+
 def cross_bridge():
     """
     This function sets up the scene for the troll challenge.
