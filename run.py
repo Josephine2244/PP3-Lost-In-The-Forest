@@ -9,6 +9,23 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def cross_bridge():
+    """
+    This function sets up the scene for the troll challenge.
+    It also gives the player the choice to go back and pick
+    a different direction.
+    """
+    while True:
+        print(CROSS_BRIDGE_STORY)
+        print(colored("Options: cross/go back\n", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice == "cross":
+            meet_troll()
+        elif player_choice == "go back":
+            first_challenge()
+
 def first_challenge():
     """
     This is the first choice of the game.
