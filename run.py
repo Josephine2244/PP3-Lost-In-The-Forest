@@ -9,6 +9,33 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def after_troll():
+    """
+    This function allows the player to choose to leave the forest
+    or choose to keep exploring. If they choose to keep exploring
+    they get to complete the goblin challenge
+    """
+    while True:
+        print(AFTER_GOBLIN_AND_TROLL)
+        print(colored("Options: investigate/explore", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice == "investigate":
+            print(f"Congratulations {name}! You are out of the forest!)
+            print("Do you want to play again?")
+            print(colored("Options: yes/no", "green"))
+            final_choice = input()
+            if final_choice not in directions:
+                print("Please enter a valid option.")
+            elif final_choice == "yes":
+                start_game()
+            elif final_choice == "no":
+                print("Thank you for playing!")
+                break
+        elif player_choice == "explore":
+            tree_down()
+
 def meet_goblin():
     """
     This is the goblin challenge. The player must fight the
