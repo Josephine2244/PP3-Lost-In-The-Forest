@@ -9,6 +9,23 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def first_challenge():
+    """
+    This is the first choice of the game.
+    This will decide which challenge they face.
+    """
+    while True:
+        print(FIRST_CHALLENGE_STORY)
+        print(colored("Options: left/right\n", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice = "left":
+            tree_down()
+        elif player_choice == "right":
+            cross_bridge()
+
+
 def start_game():
     """
     This sets up the game for the player.
