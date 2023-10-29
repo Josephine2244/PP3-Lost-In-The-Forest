@@ -9,11 +9,47 @@ from storytext import *
 tprint("Lost In The Forest", font="big")
 
 
+def end_game():
+    """
+    Gives player choice to play again or end the game.
+    """
+    while True:
+        print("Do you want to play again?")
+        print(colored("Options: yes/no", "green"))
+        final_choice = input()
+        if final_choice not in directions:
+            print("Please enter a valid option.")
+        elif final_choice == "yes":
+            start_game()
+        else: print("Thank you for playing!")
+        tprint("The End", font="big")
+        print(Created by: @josephine2244)
+
+
+def after_goblin():
+    """
+    This function allows the player to choose to leave the forest
+    or choose to keep exploring. If they choose to keep exploring
+    they get to complete the goblin challenge.
+    """
+    while True:
+        print(AFTER_GOBLIN_AND_TROLL)
+        print(colored("Options: investigate/explore", "green"))
+        player_choice = input()
+        if player_choice not in directions:
+            print("Please enter a valid option.")
+        elif player_choice == "explore":
+            cross_bridge()
+        elif player_choice == "investigate":
+            print(f"Congratulations {name}! You are out of the forest!")
+            end_game()
+
+
 def after_troll():
     """
     This function allows the player to choose to leave the forest
     or choose to keep exploring. If they choose to keep exploring
-    they get to complete the goblin challenge
+    they get to complete the goblin challenge.
     """
     while True:
         print(AFTER_GOBLIN_AND_TROLL)
@@ -36,6 +72,7 @@ def after_troll():
         elif player_choice == "explore":
             tree_down()
 
+
 def meet_goblin():
     """
     This is the goblin challenge. The player must fight the
@@ -55,6 +92,7 @@ def meet_goblin():
             print(FIGHT_GOBLIN)
             print(f"Success {name}! You grab your cloak and run!\n")
             after_goblin()
+
 
 def meet_troll():
     """
@@ -85,7 +123,6 @@ def meet_troll():
             elif player_choice == "hit troll":
                 print(f"You beat the troll! Let's get out of here {name}!\n")
                 after_troll()
-
 
 
 def tree_down():
@@ -122,6 +159,7 @@ def cross_bridge():
             meet_troll()
         elif player_choice == "go back":
             first_challenge()
+
 
 def first_challenge():
     """
