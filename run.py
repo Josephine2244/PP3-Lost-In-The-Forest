@@ -22,9 +22,9 @@ def end_game():
         elif final_choice == "yes":
             start_game()
         else:
-        print("Thank you for playing!")
-        tprint("The End", font="big")
-        print("Created by: @josephine2244")
+            print("Thank you for playing!")
+            tprint("The End", font="big")
+            print("Created by: @josephine2244")
 
 
 def after_goblin():
@@ -164,7 +164,7 @@ def first_challenge():
         player_choice = input()
         if player_choice not in directions:
             print("Please enter a valid option.")
-        elif player_choice = "left":
+        elif player_choice == "left":
             tree_down()
         elif player_choice == "right":
             cross_bridge()
