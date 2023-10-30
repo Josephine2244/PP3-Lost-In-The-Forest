@@ -100,5 +100,29 @@ There are two paths the user can choose from. Each come with their own challenge
 | 39 | End game play again input 'no' | Input 'no' where prompted to do so | Input is accepted and leads to end game screen |
 | 40 | End game play again incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 
+### Fixed bugs
+
+- Game was not moving to next scene if input had to be re-entered. It was fixed by adding 'while true' to start of function and rearranging order of options in the function.
+
 ## Deployment
+
+### via CodeAnywhere
+1. Log into Codeanywhere.
+2. Go to workspace that was created for the project using link copied from Github.
+3. Open workspace and go to terminal at bottom of page.
+4. Type 'python3 -m http.server' to open a preview of browser.
+5. A box will pop up in the bottom right corner of the screen when you can click to open the browser.
+6. This will open in a new tab.
+
+### via Github
+1. Go to setting in the Github repository
+2. Find 'Pages' in the list on the left side of the page
+3. Under the section 'Source', choose 'Deploy from Branch'
+4. Under 'Branch', choose 'Main' and then save
+5. The link to the website will appear at the top of this page once it is ready. It may take a couple of minutes.
+
+### via Heroku
+1. Log into Heroku
+2. 
+
 ## Credits
