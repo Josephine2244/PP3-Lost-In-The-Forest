@@ -21,9 +21,10 @@ def end_game():
             print("Please enter a valid option.")
         elif final_choice == "yes":
             start_game()
-        else: print("Thank you for playing!")
+        else:
+        print("Thank you for playing!")
         tprint("The End", font="big")
-        print(Created by: @josephine2244)
+        print("Created by: @josephine2244")
 
 
 def after_goblin():
