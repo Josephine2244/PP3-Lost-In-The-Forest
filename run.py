@@ -6,7 +6,7 @@ from art import *
 from termcolor import colored
 from storytext import *
 
-tprint("Lost In The Forest", font="big")
+tprint("Lost In The Forest", font="small")
 
 
 def end_game():
