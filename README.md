@@ -23,13 +23,13 @@ Lost in the Forest is a text-based adventure game. The player must choose what d
 
 ## Features
 
-# Title
+### Title
 The title is displayed in a big font at the begninning of the game to draw the attention of the user.
 
-# Add Name
+### Add Name
 The user adds their name at the beginning of the game to personalise the experience.
 
-# Multiple paths with different choices
+### Multiple paths with different choices
 There are two paths the user can choose from. Each come with their own challenges and choices along the way.
 
 ## Future Features
@@ -56,5 +56,49 @@ There are two paths the user can choose from. Each come with their own challenge
 - Art (ASCII Art for game title installed in the workspace terminal)
 
 ## Testing
+### Test Cases
+| ID | Test Subject | Steps Taken | Outcome Generated |
+|----|--------------|-------------|-------------------|
+| 01 | Title | Go to game and check appearance of title | Title is legible and is of appropriate sizing |
+| 02 | Start game story | Check appearance and readability of the story | Story is easy to understand and is legible. Options are shown in green |
+| 03 | Input name | Input name where prompted to do so | Game handles input and will move to next scene if it is acceptable |
+| 04 | Incorrect input name (empty) | Attempt to proceed with empty name input | Game will ask player to provide a valid name | 
+| 05 | First challenge story | Check appearance of story | Story is easy to understand and is legible |
+| 06 | First challenge input 'left' | Input 'left' where prompted to do so | Input is accepted and leads to next scene (tree down) |
+| 07 | First challenge input 'right' | Input 'right' where prompted to do so | Input is accepted and leads to next scene (cross bridge) |
+| 08 | First challenge incorrect input | Input incorrect value when prompted to choose an option | Input rejected. Player prompted to input choice again |
+| 09 | Cross bridge story | Check appearance of story  | Story is easy to understand and is legible |
+| 10 | Cross bridge input 'cross' | Input 'cross' where prompted to do so | Input is accepted and leads to next scene (meet troll) |
+| 11  Cross bridge input 'go back' | Input 'go back' where prompted to do so | Input is accepted and leads back to previous scene (first challenge) |
+| 12 | Cross bridge incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 13 | Tree down story | Check appearance of story | Story is easy to understand and is legible |
+| 14 | Tree down input 'jump over' | Input 'jump over' where prompted to do so | Input is accepted and leads to next scene (meet goblin) |
+| 15 | Tree down input 'go back' | Input 'go back' where prompted to do so | Input is accepted and leads back to previous scene (first challenge) |
+| 16 | Tree down incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 17 | Meet troll story | Check appearance of story | Story is easy to understand and is legible |
+| 18 | Meet troll input 'speak' | Input 'speak' where prompted to do so | Input is accepted and leads to next scene (riddle) |
+| 19 | Meet troll riddle | Check appearance of riddle | Riddle is easy to read and understand, appears in blue text |
+| 20 | Meet troll riddle correct answer | Input riddle answer where prompted to do so | Input is accepted and leads to next scene (after troll) |
+| 21 | Meet troll riddle incorrect answer | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again and is shown hints |
+| 22 | Meet troll 'fight' | Input 'fight' where prompted to do so | Input is accepted and leads to next scene (hit troll) |
+| 23 | Meet troll incorrect input | Input incorrect value when prompted to chooce an option| Input is rejected. Player prompted to input choice again |
+| 24 | Meet troll input 'hit troll' | Input 'hit troll' where prompted to do so | Input is accepted and leads to next scene (after troll) |
+| 25 | Meet troll fight incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 26 | Meet goblin story | Check appearance of story | Story is easy to understand and is legible |
+| 27 | Meet goblin input 'give cloak' | Input 'give cloak' where prompted to do so | Input is accepted and leads to next scene (after goblin) |
+| 28 | Meet goblin input 'fight' | Input 'fight' where prompted to do so | Input is accepted, fight story is easy to read and understand, and leads to next scene (after goblin) |
+| 29 | Meet goblin incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 30 | After troll story | Check appearance of story | Story is easy to understand and is legible |
+| 31 | After troll input 'investigate' | Input 'investigate' where prompted to do so | Input is accepted and leads to end of game |
+| 32 | After troll input 'explore' | Input 'explore' where prompted to do so | Input is accepted and leads to next scene (tree down) |
+| 33 | After troll incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 34 | After goblin story | Check appearance of story | Story is easy to understand and is legible |
+| 35 | After goblin input 'investigate' | Input 'investigate' where prompted to do so | Input is accepted and leads to end game screen |
+| 36 | After goblin input 'explore' | Input 'explore' where prompted to do so | Input is accepted and leads to next scene (cross bridge) |
+| 37 | After goblin incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 38 | End game play again input 'yes' | Input 'yes' where prompted to do so | Input is accepted and leads to start game screen |
+| 39 | End game play again input 'no' | Input 'no' where prompted to do so | Input is accepted and leads to end game screen |
+| 40 | End game play again incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+
 ## Deployment
 ## Credits
