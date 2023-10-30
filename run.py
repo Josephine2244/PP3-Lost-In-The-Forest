@@ -59,7 +59,7 @@ def after_troll():
         if player_choice not in directions:
             print("Please enter a valid option.")
         elif player_choice == "investigate":
-            print(f"Congratulations {name}! You are out of the forest!)
+            print(f"Congratulations {name}! You are out of the forest!")
             end_game()
         elif player_choice == "explore":
             tree_down()
