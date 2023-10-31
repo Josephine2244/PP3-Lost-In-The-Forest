@@ -37,6 +37,7 @@ def near_end_game():
     player_choice = take_user_input(NEAR_END_GAME_STORY, NEAR_END_GAME_INPUTS)
     NEAR_END_GAME_INPUTS[player_choice]()
 
+
 def exit_dark_forest():
     """
     This function brings the dark forest scene to an end and leads to the
@@ -44,6 +45,7 @@ def exit_dark_forest():
     """
     player_choice = take_user_input(EXIT_DARK_FOREST_STORY, EXIT_DARK_FOREST_INPUTS)
     EXIT_DARK_FOREST_INPUTS[player_choice]()
+
 
 def enter_dark_forest():
     """
@@ -53,6 +55,7 @@ def enter_dark_forest():
     player_choice = take_user_input(ENTER_DARK_FOREST_STORY, ENTER_DARK_FOREST_INPUTS)
     ENTER_DARK_FOREST_INPUTS[player_choice]()
 
+
 def find_map():
     """
     This function gives the player the option to follow the map
@@ -60,6 +63,7 @@ def find_map():
     """
     player_choice = take_user_input(FIND_MAP_STORY, FIND_MAP_INPUTS)
     FIND_MAP_INPUTS[player_choice]()
+
 
 def escape_troll():
     """
@@ -69,6 +73,7 @@ def escape_troll():
     player_choice = take_user_input(ESCAPE_TROLL_STORY, ESCAPE_TROLL_INPUTS)
     ESCAPE_TROLL_INPUTS[player_choice]()
 
+
 def get_chased():
     """
     This function gives the player the option to run or hide when being
@@ -76,6 +81,7 @@ def get_chased():
     """
     player_choice = take_user_input(GET_CHASED_STORY, GET_CHASED_INPUTS)
     GET_CHASED_INPUTS[player_choice]()
+
 
 def fight_goblin():
     """
