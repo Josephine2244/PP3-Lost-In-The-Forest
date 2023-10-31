@@ -187,5 +187,49 @@ def start_game():
             first_challenge()
 
 
+def print_options_text(keys):
+    """
+    This function prints the options available to the player.
+    """
+    display_text = "Options: "
+    key_index = 0
+    for key in keys:
+        if key_index == 0:
+            display_text += key
+        else:
+            display_text += "/" + key
+        key_index+=1
+    print(colored(display_text, "green"))
+
+
+def take_user_input(first_print, input_options):
+    """
+    This function takes the user input and checks if it is valid
+    """
+    while True:
+        print(first_print)
+        print_options_text(input_options.keys())
+        player_choice = input()
+        player_choice = player_choice.lower()
+        if player_choice in input_options:
+            return player_choice
+        else:
+            print("Please enter a valid option.")
+
+
+FIRST_CHALLENGE_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+CROSS_BRIDGE_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+TREE_DOWN_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+MEET_GOBLIN_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+FIGHT_GOBLIN_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+FIND_MAP_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+ENTER_DARK_FOREST_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+EXIT_DARK_FOREST_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+GET_CHASED_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+ESCAPE_TROLL_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+NEAR_END_GAME_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+END_GAME_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+ANSWER = ["coin", "a gold coin", "a coin", "gold coin"]
+
 if __name__ == '__main__':
     start_game()
