@@ -27,42 +27,13 @@ def end_game():
             print("Created by: @josephine2244")
 
 
-def after_goblin():
+def fight_goblin():
     """
-    This function allows the player to choose to leave the forest
-    or choose to keep exploring. If they choose to keep exploring
-    they get to complete the goblin challenge.
+    This function plays out the story of the fight and allows the player
+    to continue to the next scene.
     """
-    while True:
-        print(AFTER_GOBLIN_AND_TROLL)
-        print(colored("Options: investigate/explore", "green"))
-        player_choice = input()
-        if player_choice not in directions:
-            print("Please enter a valid option.")
-        elif player_choice == "explore":
-            cross_bridge()
-        elif player_choice == "investigate":
-            print(f"Congratulations {name}! You are out of the forest!")
-            end_game()
-
-
-def after_troll():
-    """
-    This function allows the player to choose to leave the forest
-    or choose to keep exploring. If they choose to keep exploring
-    they get to complete the goblin challenge.
-    """
-    while True:
-        print(AFTER_GOBLIN_AND_TROLL)
-        print(colored("Options: investigate/explore", "green"))
-        player_choice = input()
-        if player_choice not in directions:
-            print("Please enter a valid option.")
-        elif player_choice == "investigate":
-            print(f"Congratulations {name}! You are out of the forest!")
-            end_game()
-        elif player_choice == "explore":
-            tree_down()
+    player_choice = take_user_input(FIGHT_GOBLIN_STORY, FIGHT_GOBLIN_INPUTS)
+    FIGHT_GOBLIN_INPUTS[player_choice]()
 
 
 def meet_goblin():
@@ -70,20 +41,8 @@ def meet_goblin():
     This is the goblin challenge. The player must fight the
     goblin or give it their cloak.
     """
-    while True:
-        print(MEET_GOBLIN_STORY)
-        print(colored("Options: give cloak/fight\n", "green"))
-        player_choice = input()
-        if player_choice not in directions:
-            print("Please enter a valid option.")
-        elif player_choice == "give cloak":
-            print("Success! The goblin takes the cloak and leaves.\n")
-            print(f"Let's get moving {name} before we freeze!")
-            after_goblin()
-        elif player_choice == "fight":
-            print(FIGHT_GOBLIN)
-            print(f"Success {name}! You grab your cloak and run!\n")
-            after_goblin()
+    player_choice = take_user_input(MEET_GOBLIN_STORY, MEET_GOBLIN_INPUTS)
+    MEET_GOBLIN_INPUTS[player_choice]()
 
 
 def meet_troll():
