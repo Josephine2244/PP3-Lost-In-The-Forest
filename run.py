@@ -123,16 +123,8 @@ def tree_down():
     It also gives the player the choice to go back and pick
     a different direction.
     """
-    while True:
-        print(TREE_DOWN_STORY)
-        print(colored("Options: jump over/go back\n", "green"))
-        player_choice = input()
-        if player_choice not in directions:
-            print("Please enter a valid option.")
-        elif player_choice == "jump over":
-            meet_goblin()
-        elif player_choice == "go back":
-            first_challenge()
+    player_choice = take_user_input(TREE_DOWN_STORY, TREE_DOWN_INPUTS)
+    TREE_DOWN_INPUTS[player_choice]()
 
 
 def cross_bridge():
@@ -141,16 +133,8 @@ def cross_bridge():
     It also gives the player the choice to go back and pick
     a different direction.
     """
-    while True:
-        print(CROSS_BRIDGE_STORY)
-        print(colored("Options: cross/go back\n", "green"))
-        player_choice = input()
-        if player_choice not in directions:
-            print("Please enter a valid option.")
-        elif player_choice == "cross":
-            meet_troll()
-        elif player_choice == "go back":
-            first_challenge()
+    player_choice = take_user_input(CROSS_BRIDGE_STORY, CROSS_BRIDGE_INPUTS)
+    CROSS_BRIDGE_INPUTS[player_choice]()
 
 
 def first_challenge():
@@ -158,16 +142,8 @@ def first_challenge():
     This is the first choice of the game.
     This will decide which challenge they face.
     """
-    while True:
-        print(FIRST_CHALLENGE_STORY)
-        print(colored("Options: left/right\n", "green"))
-        player_choice = input()
-        if player_choice not in directions:
-            print("Please enter a valid option.")
-        elif player_choice == "left":
-            tree_down()
-        elif player_choice == "right":
-            cross_bridge()
+    player_choice = take_user_input(FIRST_CHALLENGE_STORY, FIRST_CHALLENGE_INPUTS)
+    FIRST_CHALLENGE_INPUTS[player_choice]()
 
 
 def start_game():
