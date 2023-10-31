@@ -100,7 +100,7 @@ def meet_troll():
         elif player_choice == "speak":
             print(colored(RIDDLE, "blue"))
             player_answer = input()
-            if player_answer not in answer:
+            if player_answer not in ANSWER:
                 print("Incorrect! Here's a hint:")
                 print("2 words, 4 letters each. Think of money...\n")
             else:

@@ -28,18 +28,36 @@ A gold tail,
 But no body,
 What am I?"""
 
-answer = ["coin", "gold coin", "a coin", "a gold coin"]
+GET_CHASED_STORY = """You have passed the troll. You see a path ahead.
+You hear the troll getting up and it starts chasing you!
+Will you make a run for it or hide?"""
+
+ESCAPE_TROLL_STORY = """You hide in a nearby bush.
+You hear the troll run towards you but he doesn't see you.
+As he runs into the distance you run towards the path ahead"""
 
 MEET_GOBLIN_STORY = """You are greeted by an angry goblin.
 He demands payment before you continue.
 The only thing you have to give is your cloak.
 You can give the goblin your cloak or fight it."""
 
-FIGHT_GOBLIN = """You pretend to hand the goblin your cloak.
+FIGHT_GOBLIN_STORY = """You pretend to hand the goblin your cloak.
 Instead you throw it over its head!
 It is disorientated so you take your chance.
 You grab a nearby branch and hit it.
 It falls to the ground and you hear a soft snore."""
 
-AFTER_GOBLIN_AND_TROLL = """You get passed and see an opening in the trees.
+FIND_MAP_STORY = """You see a map on the ground.
+It looks like it shows a path ahead that leads out of the forest.
+Do you want to follow the map or ignore it?"""
+
+ENTER_DARK_FOREST_STORY = """You ignore the map and decide to
+find your own way out of the forest. After a bit of walking you
+end up in the darkest part of the forest"""
+
+EXIT_DARK_FOREST_STORY = """You walk quickly through the dark forest.
+There are lots of birds screeching above you and you feel a pair of
+eyes on you. Eventually you see a light ahead and run towards it."""
+
+NEAR_END_GAME_STORY = """You get passed and see an opening in the trees.
 Will you investigate the opening or keep exploring?"""
