@@ -14,6 +14,7 @@ def end_game():
     Gives player choice to play again or end the game.
     """
     while True:
+        print(colored("You have escaped the forest!\n", "red"))
         print("Do you want to play again?")
         print(colored("Options: yes/no", "green"))
         final_choice = input()
@@ -26,6 +27,55 @@ def end_game():
             tprint("The End", font="big")
             print("Created by: @josephine2244")
 
+
+def near_end_game():
+    """
+    This function gives the player the choice to end the game by investigating
+    the opening or keep exploring. If they choose to keep exploring they will
+    be brought back to the beginning so they can choose an alternate path.
+    """
+    player_choice = take_user_input(NEAR_END_GAME_STORY, NEAR_END_GAME_INPUTS)
+    NEAR_END_GAME_INPUTS[player_choice]()
+
+def exit_dark_forest():
+    """
+    This function brings the dark forest scene to an end and leads to the
+    end game scene.
+    """
+    player_choice = take_user_input(EXIT_DARK_FOREST_STORY, EXIT_DARK_FOREST_INPUTS)
+    EXIT_DARK_FOREST_INPUTS[player_choice]()
+
+def enter_dark_forest():
+    """
+    This function sets up the scene for the dark forest and gives the player
+    the option to return to the find map scene.
+    """
+    player_choice = take_user_input(ENTER_DARK_FOREST_STORY, ENTER_DARK_FOREST_INPUTS)
+    ENTER_DARK_FOREST_INPUTS[player_choice]()
+
+def find_map():
+    """
+    This function gives the player the option to follow the map
+    they find or to ignore it and find their own way.
+    """
+    player_choice = take_user_input(FIND_MAP_STORY, FIND_MAP_INPUTS)
+    FIND_MAP_INPUTS[player_choice]()
+
+def escape_troll():
+    """
+    This function gives the player the chance to run away after the
+    troll runs past them.
+    """
+    player_choice = take_user_input(ESCAPE_TROLL_STORY, ESCAPE_TROLL_INPUTS)
+    ESCAPE_TROLL_INPUTS[player_choice]()
+
+def get_chased():
+    """
+    This function gives the player the option to run or hide when being
+    chased by the troll.
+    """
+    player_choice = take_user_input(GET_CHASED_STORY, GET_CHASED_INPUTS)
+    GET_CHASED_INPUTS[player_choice]()
 
 def fight_goblin():
     """
