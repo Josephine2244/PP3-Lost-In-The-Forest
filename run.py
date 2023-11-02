@@ -53,7 +53,7 @@ def enter_forest():
     the option to return to the find map scene.
     """
     player_choice = take_user_input(ENTER_DARK_FOREST_STORY, ENTER_FOREST_INPUTS)
-    ENTER_DARK_FOREST_INPUTS[player_choice]()
+    ENTER_FOREST_INPUTS[player_choice]()
 
 
 def find_map():
