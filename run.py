@@ -47,12 +47,12 @@ def exit_dark_forest():
     EXIT_DARK_FOREST_INPUTS[player_choice]()
 
 
-def enter_dark_forest():
+def enter_forest():
     """
     This function sets up the scene for the dark forest and gives the player
     the option to return to the find map scene.
     """
-    player_choice = take_user_input(ENTER_DARK_FOREST_STORY, ENTER_DARK_FOREST_INPUTS)
+    player_choice = take_user_input(ENTER_DARK_FOREST_STORY, ENTER_FOREST_INPUTS)
     ENTER_DARK_FOREST_INPUTS[player_choice]()
 
 
@@ -213,8 +213,8 @@ CROSS_BRIDGE_INPUTS = {'cross': meet_troll, 'back': first_challenge}
 TREE_DOWN_INPUTS = {'jump': meet_goblin, 'back': first_challenge}
 MEET_GOBLIN_INPUTS = {'give': find_map, 'fight': fight_goblin}
 FIGHT_GOBLIN_INPUTS = {'continue': find_map}
-FIND_MAP_INPUTS = {'follow': end_game, 'ignore': enter_dark_forest}
-ENTER_DARK_FOREST_INPUTS = {'back': find_map, 'continue': exit_dark_forest}
+FIND_MAP_INPUTS = {'follow': end_game, 'ignore': enter_forest}
+ENTER_FOREST_INPUTS = {'back': find_map, 'continue': exit_dark_forest}
 EXIT_DARK_FOREST_INPUTS = {'run': end_game}
 GET_CHASED_INPUTS = {'run': end_game, 'hide': escape_troll}
 ESCAPE_TROLL_INPUTS = {'run': near_end_game}
