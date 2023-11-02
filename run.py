@@ -208,18 +208,18 @@ def take_user_input(first_print, input_options):
             print("Please enter a valid option.")
 
 
-FIRST_CHALLENGE_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-CROSS_BRIDGE_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-TREE_DOWN_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-MEET_GOBLIN_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-FIGHT_GOBLIN_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-FIND_MAP_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-ENTER_DARK_FOREST_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-EXIT_DARK_FOREST_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-GET_CHASED_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-ESCAPE_TROLL_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-NEAR_END_GAME_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
-END_GAME_INPUTS = {'left' : tree_down, 'right' : cross_bridge}
+FIRST_CHALLENGE_INPUTS = {'left': tree_down, 'right': cross_bridge}
+CROSS_BRIDGE_INPUTS = {'cross': meet_troll, 'back': first_challenge}
+TREE_DOWN_INPUTS = {'jump': meet_goblin, 'back': first_challenge}
+MEET_GOBLIN_INPUTS = {'give': find_map, 'fight': fight_goblin}
+FIGHT_GOBLIN_INPUTS = {'continue': find_map}
+FIND_MAP_INPUTS = {'follow': end_game, 'ignore': enter_dark_forest}
+ENTER_DARK_FOREST_INPUTS = {'back': find_map, 'continue': exit_dark_forest}
+EXIT_DARK_FOREST_INPUTS = {'run': end_game}
+GET_CHASED_INPUTS = {'run': end_game, 'hide': escape_troll}
+ESCAPE_TROLL_INPUTS = {'run': near_end_game}
+NEAR_END_GAME_INPUTS = {'investigate': end_game, 'explore': first_challenge}
+END_GAME_INPUTS = {'yes': start_game, 'no': end_game}
 ANSWER = ["coin", "a gold coin", "a coin", "gold coin"]
 
 if __name__ == '__main__':
