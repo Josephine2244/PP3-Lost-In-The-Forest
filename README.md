@@ -43,7 +43,7 @@ There are two paths the user can choose from. Each come with their own challenge
 
 ## Flow Chart
 
-![FlowChart Lost in the Forest](https://github.com/Josephine2244/PP3-Lost-In-The-Forest/assets/137813807/68b2b81f-8d6e-405b-a139-7b9995bf72b3)
+![FlowChart Lost in the Forest](https://github.com/Josephine2244/PP3-Lost-In-The-Forest/assets/137813807/7f217520-8810-499b-83a0-93babbe80bdb)
 
 ## Technology
 
@@ -69,11 +69,11 @@ There are two paths the user can choose from. Each come with their own challenge
 | 08 | First challenge incorrect input | Input incorrect value when prompted to choose an option | Input rejected. Player prompted to input choice again |
 | 09 | Cross bridge story | Check appearance of story  | Story is easy to understand and is legible |
 | 10 | Cross bridge input 'cross' | Input 'cross' where prompted to do so | Input is accepted and leads to next scene (meet troll) |
-| 11  Cross bridge input 'go back' | Input 'go back' where prompted to do so | Input is accepted and leads back to previous scene (first challenge) |
+| 11 | Cross bridge input 'back' | Input 'back' where prompted to do so | Input is accepted and leads back to previous scene (first challenge) |
 | 12 | Cross bridge incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 | 13 | Tree down story | Check appearance of story | Story is easy to understand and is legible |
-| 14 | Tree down input 'jump over' | Input 'jump over' where prompted to do so | Input is accepted and leads to next scene (meet goblin) |
-| 15 | Tree down input 'go back' | Input 'go back' where prompted to do so | Input is accepted and leads back to previous scene (first challenge) |
+| 14 | Tree down input 'jump' | Input 'jump' where prompted to do so | Input is accepted and leads to next scene (meet goblin) |
+| 15 | Tree down input 'back' | Input 'back' where prompted to do so | Input is accepted and leads back to previous scene (first challenge) |
 | 16 | Tree down incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 | 17 | Meet troll story | Check appearance of story | Story is easy to understand and is legible |
 | 18 | Meet troll input 'speak' | Input 'speak' where prompted to do so | Input is accepted and leads to next scene (riddle) |
@@ -82,27 +82,41 @@ There are two paths the user can choose from. Each come with their own challenge
 | 21 | Meet troll riddle incorrect answer | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again and is shown hints |
 | 22 | Meet troll 'fight' | Input 'fight' where prompted to do so | Input is accepted and leads to next scene (hit troll) |
 | 23 | Meet troll incorrect input | Input incorrect value when prompted to chooce an option| Input is rejected. Player prompted to input choice again |
-| 24 | Meet troll input 'hit troll' | Input 'hit troll' where prompted to do so | Input is accepted and leads to next scene (after troll) |
+| 24 | Meet troll input 'hit' | Input 'hit' where prompted to do so | Input is accepted and leads to next scene (after troll) |
 | 25 | Meet troll fight incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
-| 26 | Meet goblin story | Check appearance of story | Story is easy to understand and is legible |
-| 27 | Meet goblin input 'give cloak' | Input 'give cloak' where prompted to do so | Input is accepted and leads to next scene (after goblin) |
-| 28 | Meet goblin input 'fight' | Input 'fight' where prompted to do so | Input is accepted, fight story is easy to read and understand, and leads to next scene (after goblin) |
-| 29 | Meet goblin incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
-| 30 | After troll story | Check appearance of story | Story is easy to understand and is legible |
-| 31 | After troll input 'investigate' | Input 'investigate' where prompted to do so | Input is accepted and leads to end of game |
-| 32 | After troll input 'explore' | Input 'explore' where prompted to do so | Input is accepted and leads to next scene (tree down) |
-| 33 | After troll incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
-| 34 | After goblin story | Check appearance of story | Story is easy to understand and is legible |
-| 35 | After goblin input 'investigate' | Input 'investigate' where prompted to do so | Input is accepted and leads to end game screen |
-| 36 | After goblin input 'explore' | Input 'explore' where prompted to do so | Input is accepted and leads to next scene (cross bridge) |
-| 37 | After goblin incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
-| 38 | End game play again input 'yes' | Input 'yes' where prompted to do so | Input is accepted and leads to start game screen |
-| 39 | End game play again input 'no' | Input 'no' where prompted to do so | Input is accepted and leads to end game screen |
-| 40 | End game play again incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 26 | Get chased story | Check appearance of story | Story is easy to understand and is legible |
+| 27 | Get chased input 'run' | Input 'run' where prompted to do so | Input is accepted and leads to next scene (end game) |
+| 28 | Get chased input 'hide' | Input 'hide' where prompted to do so | Input is accepted and leads to next scene (escape troll) |
+| 29 | Get chased incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 30 | Escape troll story | Check appearance of story | Story is easy to understand and is legible |
+| 31 | Escape troll input 'run' | Input 'run' where prompted to do so | Input is accepted and leads to next scene (near end game) |
+| 32 | Escape troll incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 33 | Meet goblin story | Check appearance of story | Story is easy to understand and is legible |
+| 34 | Meet goblin input 'give' | Input 'give' where prompted to do so | Input is accepted and leads to next scene (find map) |
+| 35 | Meet goblin input 'fight' | Input 'fight' where prompted to do so | Input is accepted, fight story is easy to read and understand, and leads to next scene (find map) |
+| 36 | Meet goblin incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 37 | Find map story | Check appearance of story | Story is easy to understand and is legible |
+| 38 | Find map input 'follow' | Input 'follow' where prompted to do so | Input is accepted and leads to next scene (end game) |
+| 39 | Find map input 'ignore' | Input 'ignore' where prompted to do so | Input is accepted and leads to next scene (enter dark forest) |
+| 40 | Find map incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 41 | Enter forest story | Check appearance of story | Story is easy to understand and is legible |
+| 42 | Enter forest input 'back' | Input 'back' where prompted to do so | Input is accepted and leads to next scene (find map) |
+| 43 | Enter forest input 'continue | Input 'continue' where prompted to do so | Input is accepted and leads to next scene (exit forest) |
+| 44 | Enter forest incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 45 | Exit forest story | Check appearance of story | Story is easy to understand and is legible |
+| 46 | Exit forest input 'run' | Input 'run' where prompted to do so | Input is accepted and leads to next scene (end game) |
+| 47 | Exit forest incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 48 | Near end game story | Check appearance of story | Story is easy to understand and is legible |
+| 49 | Near end game input 'investigate' | Input 'investigate' where prompted to do so | Input is accepted and leads to next scene (end game) |
+| 50 | Near end game input 'explore' | Input 'explore' where prompted to do so | Input is accepted and leads to next scene (first challenge) |
+| 51 | Near end game incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
+| 52 | End game play again input 'yes' | Input 'yes' where prompted to do so | Input is accepted and leads back to start game scene |
+| 53 | End game play again input 'no' | Input 'no' where prompted to do so | Input is accepted and leads to end game screen |
+| 54 | End game play again incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 
 ### Fixed bugs
 
-- Game was not moving to next scene if input had to be re-entered. It was fixed by adding 'while true' to start of function and rearranging order of options in the function.
+- Game was not moving to next scene if input had to be re-entered. It was fixed by adding 'while true' to start of function and rearranging order of options in the function
 
 ## Deployment
 
@@ -113,13 +127,6 @@ There are two paths the user can choose from. Each come with their own challenge
 4. Type 'python3 -m http.server' to open a preview of browser.
 5. A box will pop up in the bottom right corner of the screen when you can click to open the browser.
 6. This will open in a new tab.
-
-### via Github
-1. Go to setting in the Github repository
-2. Find 'Pages' in the list on the left side of the page
-3. Under the section 'Source', choose 'Deploy from Branch'
-4. Under 'Branch', choose 'Main' and then save
-5. The link to the website will appear at the top of this page once it is ready. It may take a couple of minutes.
 
 ### via Heroku
 1. Log into Heroku
