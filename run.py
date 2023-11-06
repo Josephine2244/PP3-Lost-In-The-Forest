@@ -4,10 +4,13 @@ from scene to scene depending on their choices along the way.
 """
 from art import tprint
 from termcolor import colored
-from storytext import START_GAME_STORY, FIRST_CHALLENGE_STORY, CROSS_BRIDGE_STORY
-from storytext import TREE_DOWN_STORY, MEET_TROLL_STORY, RIDDLE, GET_CHASED_STORY, ESCAPE_TROLL_STORY
-from storytext import MEET_GOBLIN_STORY, FIGHT_GOBLIN_STORY, FIND_MAP_STORY, ENTER_FOREST_STORY
-from storytext import EXIT_FOREST_STORY, NEAR_END_GAME_STORY
+from storytext import START_GAME_STORY, FIRST_CHALLENGE_STORY
+from storytext import CROSS_BRIDGE_STORY, TREE_DOWN_STORY
+from storytext import MEET_TROLL_STORY, RIDDLE, GET_CHASED_STORY
+from storytext import ESCAPE_TROLL_STORY, MEET_GOBLIN_STORY
+from storytext import FIGHT_GOBLIN_STORY, FIND_MAP_STORY
+from storytext import ENTER_FOREST_STORY, EXIT_FOREST_STORY
+from storytext import NEAR_END_GAME_STORY
 
 
 tprint("Lost In The Forest", font="small")
