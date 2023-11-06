@@ -78,7 +78,7 @@ There are two paths the user can choose from. Each come with their own challenge
 | 17 | Meet troll story | Check appearance of story | Story is easy to understand and is legible |
 | 18 | Meet troll input 'speak' | Input 'speak' where prompted to do so | Input is accepted and leads to next scene (riddle) |
 | 19 | Meet troll riddle | Check appearance of riddle | Riddle is easy to read and understand, appears in blue text |
-| 20 | Meet troll riddle correct answer | Input riddle answer where prompted to do so | Input is accepted and leads to next scene (after troll) |
+| 20 | Meet troll riddle correct answer | Input riddle answer where prompted to do so | Input is accepted and leads to next scene (near end game) |
 | 21 | Meet troll riddle incorrect answer | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again and is shown hints |
 | 22 | Meet troll 'fight' | Input 'fight' where prompted to do so | Input is accepted and leads to next scene (hit troll) |
 | 23 | Meet troll incorrect input | Input incorrect value when prompted to chooce an option| Input is rejected. Player prompted to input choice again |
