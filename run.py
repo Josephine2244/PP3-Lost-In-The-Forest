@@ -4,24 +4,10 @@ from scene to scene depending on their choices along the way.
 """
 from art import tprint
 from termcolor import colored
-from storytext import DIRECTIONS, START_GAME_STORY, FIRST_CHALLENGE_STORY, CROSS_BRIDGE_STORY,
-                      TREE_DOWN_STORY, MEET_TROLL_STORY, RIDDLE, GET_CHASED_STORY,
-                      ESCAPE_TROLL_STORY, MEET_GOBLIN_STORY, FIGHT_GOBLIN_STORY, FIND_MAP_STORY,
-                      ENTER_FOREST_STORY, EXIT_FOREST_STORY, NEAR_END_GAME_STORY
+from storytext import TREE_DOWN_STORY, MEET_TROLL_STORY, RIDDLE, GET_CHASED_STORY, ESCAPE_TROLL_STORY
+from storytext import MEET_GOBLIN_STORY, FIGHT_GOBLIN_STORY, FIND_MAP_STORY, ENTER_FOREST_STORY
+from storytext import EXIT_FOREST_STORY, NEAR_END_GAME_STORY
 
-FIRST_CHALLENGE_INPUTS = {'left': tree_down, 'right': cross_bridge}
-CROSS_BRIDGE_INPUTS = {'cross': meet_troll, 'back': first_challenge}
-TREE_DOWN_INPUTS = {'jump': meet_goblin, 'back': first_challenge}
-MEET_GOBLIN_INPUTS = {'give': find_map, 'fight': fight_goblin}
-FIGHT_GOBLIN_INPUTS = {'continue': find_map}
-FIND_MAP_INPUTS = {'follow': end_game, 'ignore': enter_forest}
-ENTER_FOREST_INPUTS = {'back': find_map, 'continue': exit_forest}
-EXIT_FOREST_INPUTS = {'run': end_game}
-GET_CHASED_INPUTS = {'run': end_game, 'hide': escape_troll}
-ESCAPE_TROLL_INPUTS = {'run': near_end_game}
-NEAR_END_GAME_INPUTS = {'investigate': end_game, 'explore': first_challenge}
-END_GAME_INPUTS = {'yes': start_game, 'no': end_game}
-ANSWER = ["coin", "a gold coin", "a coin", "gold coin"]
 
 tprint("Lost In The Forest", font="small")
 
@@ -224,6 +210,20 @@ def take_user_input(first_print, input_options):
         else:
             print("Please enter a valid option.")
 
+
+FIRST_CHALLENGE_INPUTS = {'left': tree_down, 'right': cross_bridge}
+CROSS_BRIDGE_INPUTS = {'cross': meet_troll, 'back': first_challenge}
+TREE_DOWN_INPUTS = {'jump': meet_goblin, 'back': first_challenge}
+MEET_GOBLIN_INPUTS = {'give': find_map, 'fight': fight_goblin}
+FIGHT_GOBLIN_INPUTS = {'continue': find_map}
+FIND_MAP_INPUTS = {'follow': end_game, 'ignore': enter_forest}
+ENTER_FOREST_INPUTS = {'back': find_map, 'continue': exit_forest}
+EXIT_FOREST_INPUTS = {'run': end_game}
+GET_CHASED_INPUTS = {'run': end_game, 'hide': escape_troll}
+ESCAPE_TROLL_INPUTS = {'run': near_end_game}
+NEAR_END_GAME_INPUTS = {'investigate': end_game, 'explore': first_challenge}
+END_GAME_INPUTS = {'yes': start_game, 'no': end_game}
+ANSWER = ["coin", "a gold coin", "a coin", "gold coin"]
 
 if __name__ == '__main__':
     start_game()
