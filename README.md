@@ -43,6 +43,8 @@ There are two paths the user can choose from. Each come with their own challenge
 
 ## Flow Chart
 
+![flowchart](/documentation/flowchart.png)
+
 ## Technology
 
 - Python
