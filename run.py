@@ -123,11 +123,11 @@ def meet_troll():
                 near_end_game()
         elif option == "fight":
             print("You have chosen to fight. Quick! Hit the troll!\n")
-            print(colored("Options: hit troll", "green"))
+            print(colored("Options: hit", "green"))
             option = input()
             if option not in directions:
                 print("Please enter a valid option.")
-            elif option == "hit troll":
+            elif option == "hit":
                 print(f"You beat the troll! Let's get out of here {name}!\n")
                 get_chased()
 
