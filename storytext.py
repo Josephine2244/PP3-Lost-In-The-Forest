@@ -19,7 +19,7 @@ TREE_DOWN_STORY = """Oh no! There is a tree blocking your path.
 What will you do? Jump over it or go back?"""
 
 MEET_TROLL_STORY = """A troll blocks your path.
-Do you want to speak to the troll ot fight?"""
+Do you want to speak to the troll or fight?"""
 
 RIDDLE = """If you solve the riddle he will let you through.
 The riddle is:
