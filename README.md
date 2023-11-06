@@ -336,5 +336,5 @@ Multiple colors are used to draw the attention of the player to important parts,
 ## Credits
 - Instructions on adding colored text to terminal [here](https://dev.to/dev_neil_a/python-how-to-adding-color-and-styles-to-terminal-text-3699)
 - Instructions on installing termcolor [here](https://pypi.org/project/termcolor/)
-- Instructions on installing termcolor [here](https://pypi.org/project/art/)
+- Instructions on installing art [here](https://pypi.org/project/art/)
 - My Mentor, Rohit, for all his advice throughout the project.
