@@ -43,7 +43,7 @@ There are two paths the user can choose from. Each come with their own challenge
 
 ## Flow Chart
 
-![flowchart](/documentation/flowchart.png)
+![flowchart](https://raw.githubusercontent.com/Josephine2244/PP3-Lost-In-The-Forest/main/documentation/flowchart.png)
 
 ## Technology
 
@@ -59,7 +59,7 @@ There are two paths the user can choose from. Each come with their own challenge
 ### Test Cases
 | ID | Test Subject | Steps Taken | Outcome Generated |
 |----|--------------|-------------|-------------------|
-| 01 | Title | Go to game and check appearance of title | Title is legible and is of appropriate sizing |
+| 01 | Title | Go to game and check appearance of title | Title is legible and is of appropriate sizing | 
 | 02 | Start game story | Check appearance and readability of the story | Story is easy to understand and is legible. Options are shown in green |
 | 03 | Input name | Input name where prompted to do so | Game handles input and will move to next scene if it is acceptable |
 | 04 | Incorrect input name (empty) | Attempt to proceed with empty name input | Game will ask player to provide a valid name | 
