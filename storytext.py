@@ -1,7 +1,7 @@
 """
 Contains all the story segments for the game.
 """
-directions = ["left", "right", "cross", "go back", "jump over",
+DIRECTIONS = ["left", "right", "cross", "go back", "jump over",
               "speak", "fight", "hit", "give", "fight",
               "investigate", "explore", "yes", "no"]
 
