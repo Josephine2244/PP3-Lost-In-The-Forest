@@ -97,7 +97,7 @@ Multiple colors are used to draw the attention of the player to important parts,
 | 21 | Meet troll riddle incorrect answer | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again and is shown hints |
 | 22 | Meet troll input 'fight' | Input 'fight' where prompted to do so | Input is accepted and leads to next scene (hit troll) |
 | 23 | Meet troll incorrect input | Input incorrect value when prompted to chooce an option| Input is rejected. Player prompted to input choice again |
-| 24 | Meet troll input 'hit' | Input 'hit' where prompted to do so | Input is accepted and leads to next scene (after troll) |
+| 24 | Meet troll input 'hit' | Input 'hit' where prompted to do so | Input is accepted and leads to next scene (get chased) |
 | 25 | Meet troll fight incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 | 26 | Get chased story | Check appearance of story | Story is easy to understand and is legible |
 | 27 | Get chased input 'run' | Input 'run' where prompted to do so | Input is accepted and leads to next scene (end game) |
@@ -112,7 +112,7 @@ Multiple colors are used to draw the attention of the player to important parts,
 | 36 | Meet goblin incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 | 37 | Find map story | Check appearance of story | Story is easy to understand and is legible |
 | 38 | Find map input 'follow' | Input 'follow' where prompted to do so | Input is accepted and leads to next scene (end game) |
-| 39 | Find map input 'ignore' | Input 'ignore' where prompted to do so | Input is accepted and leads to next scene (enter dark forest) |
+| 39 | Find map input 'ignore' | Input 'ignore' where prompted to do so | Input is accepted and leads to next scene (enter forest) |
 | 40 | Find map incorrect input | Input incorrect value when prompted to choose an option | Input is rejected. Player prompted to input choice again |
 | 41 | Enter forest story | Check appearance of story | Story is easy to understand and is legible |
 | 42 | Enter forest input 'back' | Input 'back' where prompted to do so | Input is accepted and leads to next scene (find map) |
