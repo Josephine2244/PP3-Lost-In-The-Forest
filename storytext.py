@@ -51,11 +51,11 @@ FIND_MAP_STORY = """You see a map on the ground.
 It looks like it shows a path ahead that leads out of the forest.
 Do you want to follow the map or ignore it?"""
 
-ENTER_DARK_FOREST_STORY = """You ignore the map and decide to
+ENTER_FOREST_STORY = """You ignore the map and decide to
 find your own way out of the forest. After a bit of walking you
 end up in the darkest part of the forest"""
 
-EXIT_DARK_FOREST_STORY = """You walk quickly through the dark forest.
+EXIT_FOREST_STORY = """You walk quickly through the dark forest.
 There are lots of birds screeching above you and you feel a pair of
 eyes on you. Eventually you see a light ahead and run towards it."""
 
