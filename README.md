@@ -43,8 +43,6 @@ There are two paths the user can choose from. Each come with their own challenge
 
 ## Flow Chart
 
-![FlowChart Lost in the Forest](https://github.com/Josephine2244/PP3-Lost-In-The-Forest/assets/137813807/7f217520-8810-499b-83a0-93babbe80bdb)
-
 ## Technology
 
 - Python
