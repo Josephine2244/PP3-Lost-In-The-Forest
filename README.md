@@ -1,7 +1,7 @@
 <h1 align="center">Lost In The Forest</h1>
 Lost in the Forest is a text-based adventure game. The player must choose what direction to take to get passed any obstacles in their way as they try and make their way out of the forest.
 
-[View Live Project here]
+[View Live Project here](https://lost-in-the-forest-cc8be61e5583.herokuapp.com/)
 
 ## Table of Contents
 
