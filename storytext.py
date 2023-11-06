@@ -1,9 +1,6 @@
 """
 Contains all the story segments for the game.
 """
-DIRECTIONS = ["left", "right", "cross", "go back", "jump over",
-              "speak", "fight", "hit", "give", "fight",
-              "investigate", "explore", "yes", "no"]
 
 START_GAME_STORY = """Welcome to the Forest.
 The aim of the game is to find your way out.

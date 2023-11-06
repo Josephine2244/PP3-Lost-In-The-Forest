@@ -4,7 +4,7 @@ from scene to scene depending on their choices along the way.
 """
 from art import tprint
 from termcolor import colored
-from storytext import DIRECTIONS, START_GAME_STORY, FIRST_CHALLENGE_STORY, CROSS_BRIDGE_STORY
+from storytext import START_GAME_STORY, FIRST_CHALLENGE_STORY, CROSS_BRIDGE_STORY
 from storytext import TREE_DOWN_STORY, MEET_TROLL_STORY, RIDDLE, GET_CHASED_STORY, ESCAPE_TROLL_STORY
 from storytext import MEET_GOBLIN_STORY, FIGHT_GOBLIN_STORY, FIND_MAP_STORY, ENTER_FOREST_STORY
 from storytext import EXIT_FOREST_STORY, NEAR_END_GAME_STORY
@@ -22,7 +22,7 @@ def end_game():
         print("Do you want to play again?")
         print(colored("Options: yes/no", "green"))
         final_choice = input()
-        if final_choice not in directions:
+        if final_choice not in DIRECTIONS:
             print("Please enter a valid option.")
         elif final_choice == "yes":
             start_game()
@@ -114,7 +114,7 @@ def meet_troll():
         print(MEET_TROLL_STORY)
         print(colored("Options: speak/fight", "green"))
         option = input()
-        if option not in directions:
+        if option not in DIRECTIONS:
             print("Please enter a valid option.")
         elif option == "speak":
             print(colored(RIDDLE, "blue"))
@@ -129,7 +129,7 @@ def meet_troll():
             print("You have chosen to fight. Quick! Hit the troll!\n")
             print(colored("Options: hit", "green"))
             option = input()
-            if option not in directions:
+            if option not in DIRECTIONS:
                 print("Please enter a valid option.")
             elif option == "hit":
                 print(f"You beat the troll! Let's get out of here {name}!\n")
@@ -225,6 +225,7 @@ ESCAPE_TROLL_INPUTS = {'run': near_end_game}
 NEAR_END_GAME_INPUTS = {'investigate': end_game, 'explore': first_challenge}
 END_GAME_INPUTS = {'yes': start_game, 'no': end_game}
 ANSWER = ["coin", "a gold coin", "a coin", "gold coin"]
+DIRECTIONS = ["speak", "fight", "hit", "yes", "no"]
 
 if __name__ == '__main__':
     start_game()
