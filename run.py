@@ -108,7 +108,7 @@ def meet_troll():
     """
     while True:
         print(MEET_TROLL_STORY)
-        print(colored("Options: speak/fight\n", "green"))
+        print(colored("Options: speak/fight", "green"))
         option = input()
         if option not in directions:
             print("Please enter a valid option.")
